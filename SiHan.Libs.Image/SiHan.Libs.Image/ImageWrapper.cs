@@ -131,43 +131,6 @@ namespace SiHan.Libs.Image
                     }
                 }
             }
-        }
-
-        /// <summary>
-        /// 识别二维码
-        /// </summary>
-        public string QRCodeDecoder()
-        {
-            using (var memoryStream = new MemoryStream(this.ImageBytes.ToArray()))
-            {
-                return QrCodeHelper.Read(memoryStream);
-            }
-        }
-
-        /// <summary>
-        /// 生成二维码
-        /// </summary>
-        /// <param name="text">文字</param>
-        /// <param name="logoImage">logo图片</param>
-        /// <param name="width">宽度</param>
-        /// <param name="height">高度</param>
-        /// <param name="disableMargin">禁止白边（默认为true）</param>
-        /// <returns></returns>
-        public static ImageWrapper CreateFormQRCodeEncoder(string text, ImageWrapper logoImage = null, int width = 360, int height = 360, bool disableMargin = true)
-        {
-            if (logoImage == null)
-            {
-                byte[] bytes = QrCodeHelper.GeneratorQrImage(text, null, width, height, disableMargin);
-                return new ImageWrapper(bytes);
-            }
-            else
-            {
-                using (MemoryStream stream = logoImage.CreateMemoryStream())
-                {
-                    byte[] bytes = QrCodeHelper.GeneratorQrImage(text, stream, width, height, disableMargin);
-                    return new ImageWrapper(bytes);
-                }
-            }
-        }
+        }      
     }
 }

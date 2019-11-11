@@ -18,6 +18,11 @@ namespace SiHan.Libs.Image
         /// </summary>
         public int Height { get; set; }
 
+        /// <summary>
+        /// 图片尺寸
+        /// </summary>
+        /// <param name="width">宽度</param>
+        /// <param name="height">高度</param>
         public ImageSize(int width, int height)
         {
             if (width <= 0 || height <= 0)
