@@ -14,7 +14,10 @@ namespace SiHan.Libs.Image
     /// </summary>
     public class ImageWrapper
     {
-        private byte[] ImageBytes { get; set; }
+        /// <summary>
+        /// 图片二进制内容
+        /// </summary>
+        public byte[] ImageBytes { get; protected set; }
         /// <summary>
         /// 使用图片内容创建对象实例
         /// </summary>
