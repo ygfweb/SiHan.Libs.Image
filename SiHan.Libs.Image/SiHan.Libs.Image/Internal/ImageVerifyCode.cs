@@ -1,5 +1,4 @@
-﻿using SiHan.Libs.Utils.Text;
-using SkiaSharp;
+﻿using SkiaSharp;
 using System;
 using System.Collections.Generic;
 using System.IO;
