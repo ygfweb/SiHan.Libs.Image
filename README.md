@@ -16,9 +16,3 @@
 PM> Install-Package SiHan.Libs.Image
 ```
 
-
-
-## Linux部署
-
-linux环境下必须上传[libSkiaSharp.so](https://github.com/mono/SkiaSharp/releases/tag/v1.68.0)文件在项目目录内。
-

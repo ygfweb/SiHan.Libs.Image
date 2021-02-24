@@ -9,12 +9,13 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/ygfweb/SiHan.Libs.Image</PackageProjectUrl>
     <RepositoryUrl>https://github.com/ygfweb/SiHan.Libs.Image</RepositoryUrl>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
-    <Version>3.0.0</Version>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <Version>4.0.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="SkiaSharp" Version="1.68.0" />
+    <PackageReference Include="SkiaSharp" Version="2.80.2" />
+    <PackageReference Include="SkiaSharp.NativeAssets.Linux" Version="2.80.2" />
   </ItemGroup>
 
   <ItemGroup>
